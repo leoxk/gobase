@@ -8,7 +8,7 @@ before_install:
 - date
 - locale
 - echo $PATH
-- ehco $GOPATH
+- echo $GOPATH
 script:
 - go test -v ./...
 branches:
