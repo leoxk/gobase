@@ -2,6 +2,7 @@ Log
 ===================================================
 
 [![Build Status](https://travis-ci.org/leoxk/log.svg?branch=master)](https://travis-ci.org/leoxk/log)
+[![GoDoc](https://godoc.org/github.com/leoxk/log?status.svg)](https://godoc.org/github.com/leoxk/log)
 
 Overview
 --------
