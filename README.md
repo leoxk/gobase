@@ -7,7 +7,7 @@ Log
 Overview
 --------
 
-Simple log wrapper for stdlib log, support auto rotate file mechanism.
+Simple log wrapper for standard log, support auto rotate file mechanism.
 
 Usage
 -----
