@@ -1,19 +1,16 @@
-Go Base
-===================================================
-
+# Go Base
 [![Build Status](https://travis-ci.org/leoxk/gobase.svg?branch=master)](https://travis-ci.org/leoxk/gobase)
 [![GoDoc](https://godoc.org/github.com/leoxk/gobase?status.svg)](https://godoc.org/github.com/leoxk/gobase)
 
-Overview
+# Overview
 --------
-# Log
+### Log
 Simple log wrapper for standard log, support auto rotate file mechanism.
 
-# xlsxpb
+### xlsxpb
 Parse xlsx into protobuf message.
 
-Usage
------
+#Usage
 ```
 func TestRotateFileWriter(t *testing.T) {
 	Convey("Open new rotate file writer in system tmp dir", t, func() {
