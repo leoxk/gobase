@@ -7,6 +7,8 @@ before_script:
 - go vet ./...
 - echo $PATH
 - echo $GOPATH
+script:
+- go test -v ./...
 notifications:
   email:
     recipients:
