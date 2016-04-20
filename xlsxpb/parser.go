@@ -4,6 +4,7 @@
 // Author:      leoxiang <leoxiang727@qq.com>
 // Revision:    2016-04-18 by leoxiang
 
+// Package xlsxpb is a xlsx parser which convert xlsx into a protobuf message
 package xlsxpb
 
 import (
