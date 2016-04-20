@@ -4,7 +4,6 @@
 // Author:      leoxiang <leoxiang727@qq.com>
 // Revision:    2016-03-01 by leoxiang
 
-// Package log is a log wrapper for standard log, support auto rotate file mechanism
 package log
 
 import (
