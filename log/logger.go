@@ -22,10 +22,10 @@ const (
 	LInfo Level = iota
 	LError
 	LFatal
-	lMax = LFatal
+	LMax = LFatal
 )
 
-var l2s = [lMax + 1]string{"INF ", "ERR ", "FAT "}
+var l2s = [LMax + 1]string{"INF ", "ERR ", "FAT "}
 
 // Logger define log instance.
 type Logger struct {

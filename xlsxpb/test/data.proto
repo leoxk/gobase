@@ -1,0 +1,54 @@
+// File:        msg_cs.proto
+// Description: ---
+// Notes:       ---
+// Author:      leoxiang <leoxiang727@qq.com>
+// Revision:    2015-06-09 by leoxiang
+
+syntax = "proto2";
+
+package test;
+
+message Config {
+    repeated Table Tables = 1;
+    repeated AI AIs = 2;
+}
+
+////////////////////////////////////////////////////////////
+enum TableType {
+    Normal = 1;
+    Fast = 2;
+}
+
+message Range {
+    optional int32 min = 1;
+    optional int32 max = 2;
+}
+
+message Range64 {
+    optional int64 min = 1;
+    optional int64 max = 2;
+}
+
+message Table {
+    optional TableType RoomType = 1;
+    optional uint64 SmallBlind = 2;
+    optional string RoomName = 3;
+    optional Range  RobotNum = 4;
+    optional uint32 RobotUpdateTime = 5;
+
+}
+
+////////////////////////////////////////////////////////////
+enum AIType {
+    Loose = 1;
+    Tight = 2;
+    Any = 3;
+}
+
+message AI {
+    optional string Index = 1;
+    optional AIType Type = 2;
+    optional string InitAction = 3;
+}
+
+// vim:ts=4:sw=4:et:ft=proto:
