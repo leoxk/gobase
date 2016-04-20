@@ -1,22 +1,17 @@
 language: go
+sudo: false
 go:
  - 1.5
  - 1.6
-sudo: required
+before_script:
+  - go vet ./...
 install:
-- date
-- locale
+# Add Godeps dependencies to GOPATH and PATH
+- export GOPATH="${TRAVIS_BUILD_DIR}/Godeps/_workspace:$GOPATH"
+- export PATH="${TRAVIS_BUILD_DIR}/Godeps/_workspace/bin:$PATH"
 - echo $PATH
 - echo $GOPATH
-script:
-- go test -v ./...
-branches:
-  only:
-  - master
 notifications:
   email:
     recipients:
     - leoxiang727@gmail.com
-env:
-  global:
-  - LANG="en_US.UTF-8"
