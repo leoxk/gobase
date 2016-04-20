@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/leoxk/log"
+	"github.com/leoxk/gobase/log"
 	"github.com/tealeg/xlsx"
 )
 

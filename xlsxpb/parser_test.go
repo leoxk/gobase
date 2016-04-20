@@ -9,7 +9,7 @@ package xlsxpb
 import (
 	"testing"
 
-	"github.com/leoxk/xlsxpb/test"
+	"github.com/leoxk/gobase/xlsxpb/test"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
