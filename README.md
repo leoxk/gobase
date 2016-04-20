@@ -3,9 +3,12 @@
 [![GoDoc](https://godoc.org/github.com/leoxk/gobase?status.svg)](https://godoc.org/github.com/leoxk/gobase)
 
 ## Overview
+Gobase is golang base lib, including:
+* log - log wrapper for standard log, support auto rotate file mechanism
+* xlsxpb - xlsx parser which convert xlsx into a protobuf message
 
-##### log
-Simple log wrapper for standard log, support auto rotate file mechanism.
+## Usage
+### log
 ```
 func TestLogger(t *testing.T) {
 	l := NewLogger()
@@ -29,5 +32,6 @@ func TestLogger(t *testing.T) {
 }
 ```
 
-##### xlsxpb
-Parse xlsx into protobuf message.
+### xlsxpb
+```
+```
