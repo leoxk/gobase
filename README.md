@@ -4,8 +4,14 @@
 
 ## Overview
 Gobase is golang base lib, including:
+* base - some base functions
 * log - log wrapper for standard log, support auto rotate file mechanism
 * xlsxpb - xlsx parser which convert xlsx into a protobuf message
+
+## Documentation
+* base   [![GoDoc](https://godoc.org/github.com/leoxk/gobase?status.svg)](https://godoc.org/github.com/leoxk/gobase/base)
+* log    [![GoDoc](https://godoc.org/github.com/leoxk/gobase?status.svg)](https://godoc.org/github.com/leoxk/gobase/log)
+* xlsxpb [![GoDoc](https://godoc.org/github.com/leoxk/gobase?status.svg)](https://godoc.org/github.com/leoxk/gobase/xlsxpb)
 
 ## Usage
 ### log
