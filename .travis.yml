@@ -1,14 +1,16 @@
 language: go
 sudo: false
 go:
+- 1.4
 - 1.5
 - 1.6
 before_script:
-# - go vet ./...
+- go get github.com/mattn/gom
 - echo $PATH
 - echo $GOPATH
 script:
-- go test -v ./...
+- $HOME/gopath/bin/gom install
+- $HOME/gopath/bin/gom test
 notifications:
   email:
     recipients:
