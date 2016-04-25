@@ -1,6 +1,7 @@
 ## log
 [![Build Status](https://travis-ci.org/leoxk/log.svg?branch=master)](https://travis-ci.org/leoxk/log)
 [![GoDoc](https://godoc.org/github.com/leoxk/log?status.svg)](https://godoc.org/github.com/leoxk/log)
+[![Go Report Card](http://goreportcard.com/badge/leoxk/log)](http://goreportcard.com/report/leoxk/log)
 
 ## Overview
 a log wrapper for standard log, support auto rotate file mechanism.
