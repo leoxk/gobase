@@ -38,12 +38,18 @@ func TestLogger(t *testing.T) {
 	Convey("Without setting, the default writer should be terminal", t, func() {
 		l.SetLevel(LInfo)
 
+		l.Debug("test Debug")
+		l.Debugln("test Debugln")
 		l.Info("test Info")
 		l.Infoln("test Infoln")
+		l.Warn("test Warn")
+		l.Warnln("test Warnln")
 		l.Error("test Error")
 		l.Errorln("test Errorln")
 		l.Fatal("test Fatal")
 		l.Fatalln("test Fatalln")
+
+		So(l.GenError("test return error").Error(), ShouldEqual, "test return error")
 	})
 
 	Convey("After setting a file writer", t, func() {
