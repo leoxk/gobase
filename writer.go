@@ -64,6 +64,9 @@ func (w *RotateFileWriter) rotate() {
 
 func (w *RotateFileWriter) create() {
 	// release old
+	if w.file != nil {
+		w.file.Close()
+	}
 	w.file = nil
 
 	// open new file
