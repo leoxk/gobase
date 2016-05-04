@@ -127,7 +127,7 @@ func (l *Logger) Fatalln(v ...interface{}) {
 func (l *Logger) Panic(format string, v ...interface{}) {
 	s := fmt.Sprintf(format, v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	panic(s)
 }
 
@@ -135,7 +135,7 @@ func (l *Logger) Panic(format string, v ...interface{}) {
 func (l *Logger) Panicln(v ...interface{}) {
 	s := fmt.Sprintln(v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	panic(s)
 }
 
@@ -143,7 +143,7 @@ func (l *Logger) Panicln(v ...interface{}) {
 func (l *Logger) GenError(format string, v ...interface{}) error {
 	s := fmt.Sprintf(format, v...)
 	l.base.SetPrefix(l2s[LError])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	return errors.New(s)
 }
 
@@ -151,7 +151,7 @@ func (l *Logger) GenError(format string, v ...interface{}) error {
 func (l *Logger) GenErrorln(v ...interface{}) error {
 	s := fmt.Sprintln(v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	return errors.New(s)
 }
 

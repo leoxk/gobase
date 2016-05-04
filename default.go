@@ -78,7 +78,7 @@ func Fatalln(v ...interface{}) {
 func Panic(format string, v ...interface{}) {
 	s := fmt.Sprintf(format, v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	panic(s)
 }
 
@@ -86,7 +86,7 @@ func Panic(format string, v ...interface{}) {
 func Panicln(v ...interface{}) {
 	s := fmt.Sprintln(v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	panic(s)
 }
 
@@ -94,7 +94,7 @@ func Panicln(v ...interface{}) {
 func GenError(format string, v ...interface{}) error {
 	s := fmt.Sprintf(format, v...)
 	l.base.SetPrefix(l2s[LError])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	return errors.New(s)
 }
 
@@ -102,7 +102,7 @@ func GenError(format string, v ...interface{}) error {
 func GenErrorln(v ...interface{}) error {
 	s := fmt.Sprintln(v...)
 	l.base.SetPrefix(l2s[LFatal])
-	l.base.Output(3, s)
+	l.base.Output(2, s)
 	return errors.New(s)
 }
 

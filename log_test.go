@@ -36,7 +36,7 @@ func TestLogger(t *testing.T) {
 	l := NewLogger()
 
 	Convey("Without setting, the default writer should be terminal", t, func() {
-		l.SetLevel(LInfo)
+		// l.SetLevel()
 
 		l.Debug("test Debug")
 		l.Debugln("test Debugln")
