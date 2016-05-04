@@ -1,4 +1,6 @@
-hash: 3441bf6ff6d443d7e65fcdfc4f1d1b67e506cee012ed3b4901bbe2aab9890aa9
-updated: 2016-04-25T17:33:41.304087576+08:00
-imports: []
+hash: 49dbb6a3aaf8004744de08a3dac24ec0bf12a88df6216456778f6416ef83f721
+updated: 2016-05-04T10:21:45.349081624+08:00
+imports:
+- name: github.com/smartystreets/goconvey
+  version: d4c757aa9afd1e2fc1832aaab209b5794eb336e1
 devImports: []
