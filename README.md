@@ -10,7 +10,7 @@ a log wrapper for standard log, support auto rotate file mechanism.
 
 ## Usage
 
-```
+```go
 func TestLogger(t *testing.T) {
 	l := NewLogger()
 
