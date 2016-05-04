@@ -3,13 +3,14 @@ sudo: false
 go:
 - 1.5
 - 1.6
+- tip
 before_script:
 - go get github.com/Masterminds/glide
 - echo $PATH
 - echo $GOPATH
 script:
 - glide install
-- go test -v ./...
+- go test -v
 notifications:
   email:
     recipients:
